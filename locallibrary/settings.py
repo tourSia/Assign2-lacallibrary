@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%+@7ktjw!d*!qwf#p6dfp4+epbcjx_2mw=^nj!f76f8u$kitc$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = [] #['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -136,3 +136,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'media/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'project0myclass@gmail.com'
+EMAIL_HOST_PASSWORD = 'ctncmqnhdudlolbw'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+SERVER_EMAIL = 'root@gmail.com'

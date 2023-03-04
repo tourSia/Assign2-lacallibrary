@@ -157,3 +157,5 @@ def book_delete(request, pk):
     except:
         messages.success(request, (book.title + ' ' + book.summary + ' cannot be deleted. Author exist for this book'))
     return redirect('book_list')
+
+
